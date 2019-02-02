@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
+body {
+    color: #fff;
+    font-family: verdana, Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    line-height: 0.5;
+    margin: 0;
+    padding: 0;
+    background-image: $BgBodyMobile;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+    display: block;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    margin: 0 10px 0 0;
+    font-size: 1.8em;
+}

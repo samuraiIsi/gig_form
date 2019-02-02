@@ -1,0 +1,136 @@
+.no-TL-M {
+    display: none;
+}
+@media only screen and (min-width: $minTabletBreakPoint) and (max-width: $maxTabletBreakPoint) {
+    i.fas.fa-angle-left {
+        display: none;
+    }
+    .wrapper {
+        width: 60%;
+        background: $BgOverlayTablet no-repeat center center fixed;
+        @include boxShadow(#66886f, 0px 0px 3px 1px, rgba(99, 138, 111, 0.75));
+        margin-top: 8em;
+    }
+    body {
+        background-image: $BgBodyTablet; 
+    }
+    .form {
+        input[type=submit] {
+            background-color: rgba(255,255,255,0.2);
+        }
+    }
+}
+@media only screen and (min-width: $minDesktop) {
+    i.fas.fa-angle-left {
+        display: none;
+    }
+    .no-D {
+        display: none;
+    }
+    .wrapper {
+        width: 60%;
+        background: $BgBodyDesktop no-repeat center center fixed;
+        @include boxShadow(#66886f, 0px 0px 3px 1px, rgba(99, 138, 111, 0.75));
+        margin-top: 5em;
+    }
+    body {
+        background-image: $BgBodyDesktop; 
+    }
+    .title__section {
+        margin-bottom: 2em;
+        h1 {
+            font-size: 5em;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 1.8em;
+        }
+    }
+    .footer__section {
+        p {
+            font-size: 1.8em;
+        }
+    }
+    i.far {
+        top: 40px;
+        font-size: 35px;
+    }
+    .form {
+        text-transform: $uppercaseLetter;
+        color: $textColor;
+        &__group {
+            input, select {
+                margin-top: 10px;
+            }
+        }
+        label {
+            font-size: 1.5em;
+        }
+        input[type=submit] {
+            border: solid 4px #fff;
+            background-image: none; 
+            font-size: 2.5em;
+        }
+        input, select {
+            padding: 20px;
+            font-size: 2em;
+        }
+        &__radio {
+            padding: 25px;
+        }
+    }
+    .form__radio-label {
+        padding-left: 35px;
+        &--first-radio {
+          margin-bottom: 10px;
+        }
+        &--last-radio {
+          margin-bottom: 0;
+        }
+        & .checkmark:after {
+            top: 10px;
+            left: 9px;
+        }
+    }
+    .checkmark {
+        height: 25px;
+        width: 25px;
+    }
+    .no-TL-M {
+        display: flex !important;
+    }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) { 
+  
+    background-image: $BgBodyMobileRetina;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: $minTabletBreakPoint) and (max-width: $maxTabletBreakPoint),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: $minTabletBreakPoint) and (max-width: $maxTabletBreakPoint),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: $minTabletBreakPoint) and (max-width: $maxTabletBreakPoint),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: $minTabletBreakPoint) and (max-width: $maxTabletBreakPoint),
+only screen and (                min-resolution: 192dpi) and (min-width: $minTabletBreakPoint) and (max-width: $maxTabletBreakPoint),
+only screen and (                min-resolution: 2dppx)  and (min-width: $minTabletBreakPoint) and (max-width: $maxTabletBreakPoint) {
+    
+    background-image: $BgBodyTabletRetina;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: $minDesktop),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: $minDesktop),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: $minDesktop),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: $minDesktop),
+only screen and (                min-resolution: 192dpi) and (min-width: $minDesktop),
+only screen and (                min-resolution: 2dppx)  and (min-width: $minDesktop) { 
+    
+    background-image: $BgBodyDesktopRetina;
+}
+    
+  

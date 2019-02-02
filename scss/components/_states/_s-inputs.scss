@@ -1,0 +1,54 @@
+.state-input {
+	&--empty {
+		label {
+			display: none;
+		}
+		input {
+			border: solid 1px red;
+		}
+		.err_no-fill {
+			display: block;
+		}
+		.err_desc {
+			display: none;
+		}
+		i.far.fa-check-circle {
+			display: none;
+		}
+	}
+	&--no_valid {
+		label {
+			display: none;
+		}
+		& input {
+			border: solid 1px red;
+		}
+		& .err_no-fill {
+			display: none;
+		}
+		& .err_desc {
+			display: block;
+		}
+		& i.far.fa-check-circle {
+			display: none;
+		}
+	}
+	&--valid {
+		label {
+			display: block;
+		}
+		& .err_no-fill {
+			display: none;
+		}
+		& .err_desc {
+			display: none;
+		}
+		& i.far.fa-check-circle {
+			display: block;
+		}
+	}
+}
+
+.err_no-fill, .err_desc {
+	display: none;
+}

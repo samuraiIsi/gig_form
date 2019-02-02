@@ -1,0 +1,25 @@
+i.far { 
+    position: absolute; 
+    top: 24px; 
+    right: 15px; 
+    font-size: 20px;
+    &.fa-check-circle {
+        display: none;
+    }
+    &.show {
+        display: block;
+    }
+}
+i.fas {
+    &.fa-angle-down {
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        top: 15px;
+        right: 5px;
+        font-size: 30px;
+    }
+    &.fa-angle-left {
+        font-size: 25px;
+    }
+}

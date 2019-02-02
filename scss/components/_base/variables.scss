@@ -1,0 +1,28 @@
+// Grid
+$numberColumns: 12;
+$oneColumnSize: 8.33%;
+$aligns: right left center;
+
+// Inputs
+$inputBgColor: #0b211b;
+$inputBorderColor: #2c3a2f;
+
+// Media Queries 
+$mediaQueryGrid: (min-width, 320px, sm), (min-width, 1024px, md);
+$minTabletBreakPoint: 1024px;
+$maxTabletBreakPoint: 1439px;
+$minDesktop: 1440px;
+
+// Text Styles
+$uppercaseLetter: uppercase;
+$textColor: #fff;
+
+// BackGrounds
+$BgBodyMobile: url('Bg-M.png');
+$BgBodyTablet: url('Bg-TL.png');
+$BgBodyDesktop: url('Bg-D.png');
+$BgBodyMobileRetina: url('Bg-M-2x.png');
+$BgBodyTabletRetina: url('Bg-TL-2x.png');
+$BgBodyDesktopRetina: url('Bg-D-2x.png');
+$BgOverlayDesktop: url('overlay-D.png');
+$BgOverlayTablet: url('overlay-TL.png');

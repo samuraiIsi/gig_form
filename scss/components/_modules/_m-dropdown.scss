@@ -1,0 +1,24 @@
+.custom__dropdown {
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+    .select select {
+        position: relative;
+        padding: 10px;
+        width: 100%;
+        margin-top: 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-color: $inputBorderColor;
+        color: $textColor;
+        font-size: 1.2em;
+        text-transform: $uppercaseLetter;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        text-indent: 1px;
+        text-overflow: '';
+        padding: 20px;
+        font-size: 2em;
+    }
+}

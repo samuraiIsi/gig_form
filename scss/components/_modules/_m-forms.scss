@@ -1,0 +1,44 @@
+.form {
+    text-transform: $uppercaseLetter;
+    color: $textColor;
+    &__group {
+        position: relative;
+        label {
+            font-size: 0.7em;
+        }
+        input,
+        select {
+            padding: 10px;
+            margin-top: 5px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-color: $inputBorderColor;
+            background-color: $inputBgColor;
+            color: $textColor;
+            font-size: 1em;
+            text-transform: $uppercaseLetter;
+        }
+        ::-webkit-input-placeholder {
+            color: $textColor;
+        }
+
+        ::-moz-placeholder {
+            color: $textColor;
+        }
+
+        :-ms-input-placeholder {
+            color: $textColor;
+        }
+
+        :-moz-placeholder {
+            color: $textColor;
+        }
+
+        input:focus,
+        select:focus {
+            @include boxShadow(#66886f, 5px 0px 40px 0px, rgba(99, 138, 111, 0.75));
+            outline: none;
+        }
+    }
+}

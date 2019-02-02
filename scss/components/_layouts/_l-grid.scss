@@ -1,0 +1,66 @@
+@each $widthVx, $pixelVx, $sizeDevice in $mediaQueryGrid {
+	@media only screen and (#{$widthVx}: #{$pixelVx}) {
+		$index: 1;
+		@while $index <= $numberColumns {
+			.col-#{$sizeDevice}-#{$index} {	
+				width: $oneColumnSize * $index;
+			}
+	    	$index: $index + 1;
+	    }
+		[class*="col-#{$sizeDevice}-"] {
+			float: left;
+			padding: 10px;
+		}
+	}
+}
+.row {
+    padding: 0;
+    &::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: 2em;
+    color: #fff;
+}
+.flex {
+	&__container {
+		@include flexSetOrig;
+	}
+}
+.flex {
+	&__container--center {
+		@include flexSetOrig;
+		justify-content: center;
+	}
+}
+.flex {
+	&__container-sp-btw {
+		@include flexSetOrig;
+		justify-content: space-between;
+		-webkit-justify-content: space-between;
+	}
+}
+.flex {
+	&__container--vertical {
+		@include flexSetOrig;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		@each $align in $aligns {
+			&.sp-#{$align} {
+				justify-content: space-between;
+				-webkit-justify-content: space-between;
+				-webkit-box-align: #{$align};
+			    -moz-box-align: #{$align};
+			    -webkit-align-items: #{$align};
+			    -ms-flex-align: #{$align};
+			    align-items: #{$align};
+			}
+		}
+	}
+}

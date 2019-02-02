@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class='wrapper'>
+        <div class='title__section'>
+            <h1 class='text-center uppercaseLetter'>register</h1>
+            <i class="fas fa-angle-left"></i>
+            <p class='uppercaseLetter fs--1_2 text-center'>[username] please finalise your registration before you can proceed</p>
+        </div>
+        <form class='form'>
+            <div class='col-md-6'>
+                <div class='row'>
+                    <div class='form__group flex__container--vertical col-sm-6 col-md-6'>
+                        <label>first name</label>
+                        <label class='err_no-fill'>Field is required</label>
+                        <label class='err_desc'>Letters Only</label>
+                        <input type='text' class='input-control' id='first_name' placeholder='first name' />
+                        <i class="far fa-check-circle"></i>
+                    </div>
+                    <div class='form__group flex__container--vertical col-sm-6 col-md-6'>
+                        <label>last name</label>
+                        <label class='err_no-fill'>Field is required</label>
+                        <label class='err_desc'>Letters Only</label>
+                        <input type='text' class='input-control' id='last_name' placeholder='last name' />
+                        <i class="far fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='form__group flex__container--vertical col-sm-7 col-md-7'>
+                        <label>date of birth</label>
+                        <label class='err_no-fill'>Field is required</label>
+                        <label class='err_desc'>No Valid (DD/MM/YYYY)</label>
+                        <input input type='text' class='input-control' id='date_birth' placeholder='date of birth' />
+                        <i class="far fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class='col-sm-5 col-md-5 flex__container--center form__radio'>
+                        <div class='flex__container--vertical'>
+                            <label class="form__radio-label form__radio-label--first-radio">Male
+                                <input type="radio" name="gender" value="male" checked="checked" />
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form__radio-label form__radio-label--last-radio">Female
+                                <input type="radio" name="gender" value="female" />
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class='flex__container'>
+                    <div class='form__group flex__container--vertical col-sm-12 col-md-12'>
+                        <label>address</label>
+                        <label class='err_no-fill'>Field is required</label>
+                        <label class='err_desc'>Needs Number and Address</label>
+                        <input type='text' class='input-control' id='address' placeholder='address' />
+                        <i class="far fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class='col-md-6'>
+                <div class='flex__container-sp-btw'>
+                    <div class='form__group flex__container--vertical col-sm-5 col-md-5'>
+                        <label>postcode</label>
+                        <label class='err_no-fill'>Field is required</label>
+                        <label class='err_desc'>Not Valid</label>
+                        <input type='text' class='input-control' id='post_code' placeholder='postcode' />
+                        <i class="far fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class='form__group flex__container--vertical col-sm-7 col-md-7'>
+                        <label>city</label>
+                        <label class='err_no-fill'>Field is required</label>
+                        <label class='err_desc'>Letters Only</label>
+                        <input type='text' class='input-control' id='city' placeholder='city' />
+                        <i class="far fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class='flex__container no-D'>
+                    <div class='form__group flex__container--vertical col-sm-12 col-md-12'>
+                        <label>country</label>
+                        <select id="country-m">
+                            <option value="Spain" selected>Spain</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Italy">Italy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='flex__container no-TL-M '>
+                    <div class='form__group flex__container--vertical col-sm-12 col-md-12'>
+                        <label>country</label>
+                        <div class="custom__dropdown">
+                            <div class="select">
+                                <select name="custom__dropdown" id="custom__dropdown">
+                                    <option value="Spain" selected>Spain</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Italy">Italy</option>
+                                </select>
+                            </div>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class='form__group flex__container-sp-btw'>
+                    <div class='flex__container--vertical col-sm-4 col-md-4 no-D'>
+                        <label>country code</label>
+                        <select id="code">
+                            <option value="46" selected>+46</option>
+                            <option value="35">+35</option>
+                            <option value="34">+34</option>
+                            <option value="43">+43</option>
+                        </select>
+                    </div>
+                    <div class='flex__container--vertical col-sm-4 col-md-4 no-TL-M'>
+                        <label>country code</label>
+                        <div class="custom__dropdown">
+                        <div class="select">
+                            <select name="custom__dropdown-TLM" id="custom__dropdown-TLM">
+                                <option value="46" selected>+46</option>
+                                <option value="35">+35</option>
+                                <option value="34">+34</option>
+                                <option value="43">+43</option>
+                            </select>
+                        </div>
+                        <i class="fas fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class='form__group flex__container--vertical col-sm-8 col-md-8'>
+                        <label>phone number</label>
+                        <label class='err_no-fill'>Field is required</label>
+                        <label class='err_desc'>Not Valid (0208 993 5689)</label>
+                        <input type='text' class='input-control' id='phone_number' placeholder='phone number'/>
+                        <i class="far fa-check-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class='row'></div> 
+            <div class='col-md-12 flex__container--center'>
+                <input type='submit' value='complete registration' class='' disabled='true'>
+            </div>  
+            
+        </form>
+        <div class='row'></div> 
+        <div class='footer__section fs--1_2 col-md-12'>
+            <p class='uppercaseLetter text-center'>you will then confirm your deposit</p>
+        </div>
+        <div class='row'></div> 
+    </div>
+    <script type="text/javascript" src='scripts.min.js'></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: $inputBgColor;
+    border: solid 1px $inputBorderColor;
+    border-radius: 50%;
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+.form__radio-label {
+    display: inline-flex;
+    line-height: 1.5;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &--first-radio {
+        margin-bottom: 10px;
+    }
+    &--last-radio {
+        margin-bottom: 0;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+    input:checked ~ .checkmark {
+        background-color: $inputBgColor;
+    }
+    input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .checkmark:after {
+        top: 4px;
+        left: 4px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: white;
+    }
+}
+

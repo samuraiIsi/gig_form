@@ -1,0 +1,12 @@
+.footer {
+    &__section {
+        margin-top: 15px;
+        & p {
+            margin: 0 auto;
+            margin-bottom: 10px;
+            margin-top: 0;
+            width: 60%;
+            line-height: 1.2;
+        }
+    }
+}

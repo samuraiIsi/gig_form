@@ -1,0 +1,4 @@
+input[type=submit] {
+    text-transform: $uppercaseLetter;
+    @include featureButtons(1.8em, rgba(255, 255, 255, 0.1) , 15px 20px, 0, $textColor);
+} 

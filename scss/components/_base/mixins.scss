@@ -1,0 +1,27 @@
+@mixin featureButtons($fontSize, $bgColor, $padding, $border, $color) {
+    background-color: $bgColor;
+    font-size: $fontSize;
+    padding: $padding;
+    border: $border;
+    color: $color;
+}
+@mixin boxShadow($boderColor, $shadowColor, $shapeShadow) {
+    border-color: $boderColor;
+    box-shadow: $shapeShadow $shadowColor;
+    -webkit-box-shadow: $shapeShadow $shadowColor;
+    -moz-box-shadow: $shapeShadow $shadowColor;
+}
+@mixin flexSetOrig{
+	display: -webkit-flex;
+	display: flex;
+}
+@mixin flexSetSpace {
+	@include flexSetOrig;
+	-webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+@mixin flexSetColumn {
+	@include flexSetOrig;
+	-webkit-flex-direction: column;
+    flex-direction: column;
+}
