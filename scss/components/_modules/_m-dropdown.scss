@@ -66,10 +66,10 @@
 
     ul li {
         padding: 15px;
-        background-color: #fff;
-        color: #4FB9A7;
-        margin-bottom: 1px;
+        background-color: $inputBgColor;
+        color: #fff;
         cursor: pointer;
+        border-bottom: solid 1px #061310;
     }
 
     ul li:hover {
@@ -83,7 +83,7 @@
     }
 
     input[type=checkbox]:checked~label {
-        background-color: #3D88BD;
+        background-color: $inputBgColor;
     }
 
     input[type=checkbox]:checked~ul {
