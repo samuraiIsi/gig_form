@@ -1,9 +1,12 @@
 var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
     uglify = require('gulp-uglify'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
+    sass = require('gulp-sass'),
+    gulp = require('gulp'),
     loading = require('gulp-load-plugins')();
+
+    sass.compiler = require('node-sass');
 
 var jsFiles = 'js/*.js';
 
@@ -25,15 +28,15 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest('dist/'));
 });
 
-gulp.task('styles', function() {
-    return sass('scss/*.scss', { style: 'compressed' })
-        .pipe(gulp.dest('dist/'));
-
+gulp.task('sass', function () {
+  return gulp.src('./scss/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('dist/'));
 });
 
 gulp.task('watch', function() {
     gulp.watch(jsFiles, ['scripts']);
-    gulp.watch('scss/**/*.scss', ['styles']);
+    gulp.watch('scss/**/*.scss', ['sass']);
     gulp.watch('index.html', ['copy:index']);
 });
 
@@ -44,4 +47,4 @@ gulp.task('serve', function() {
     });
 });
 
-gulp.task('default', ['scripts', 'styles', 'watch', 'copy:index', 'copy:images', 'serve']);
+gulp.task('default', ['scripts', 'sass', 'watch', 'copy:index', 'copy:images', 'serve']);

@@ -7,6 +7,8 @@ This project is intended to create a fully responsive website. Creating a single
 
 To clone and run this application locally, you'll need Git and Node.js installed on your computer.
 
+Intall saass Globally: npm install -g sass
+
 sh
 $ git clone https://github.com/samuraiIsi/gig_form
 $ npm install

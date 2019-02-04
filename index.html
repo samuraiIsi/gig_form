@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
     <div class='wrapper'>
         <div class='title__section'>
@@ -88,26 +90,27 @@
                             <option value="Denmark">Denmark</option>
                             <option value="Italy">Italy</option>
                         </select>
+                        <i class="fas fa-angle-down"></i>
                     </div>
                 </div>
                 <div class='flex__container no-TL-M '>
                     <div class='form__group flex__container--vertical col-sm-12 col-md-12'>
                         <label>country</label>
-                        <div class="custom__dropdown">
-                            <div class="select">
-                                <select name="custom__dropdown" id="custom__dropdown">
-                                    <option value="Spain" selected>Spain</option>
-                                    <option value="Sweden">Sweden</option>
-                                    <option value="Denmark">Denmark</option>
-                                    <option value="Italy">Italy</option>
-                                </select>
-                            </div>
+                        <div class="dropdown">
+                            <input type="checkbox" id="checkbox-toggle">
+                            <label for="checkbox-toggle">Country</label>
+                            <ul>
+                                <li><a href="#">Spain</a></li>
+                                <li><a href="#">Sweden</a></li>
+                                <li><a href="#">Denmark</a></li>
+                                <li><a href="#">Italy</a></li>
+                            </ul>
                             <i class="fas fa-angle-down"></i>
                         </div>
                     </div>
                 </div>
-                <div class='form__group flex__container-sp-btw'>
-                    <div class='flex__container--vertical col-sm-4 col-md-4 no-D'>
+                <div class='flex__container-sp-btw'>
+                    <div class='form__group flex__container--vertical col-sm-4 col-md-4 no-D'>
                         <label>country code</label>
                         <select id="code">
                             <option value="46" selected>+46</option>
@@ -115,42 +118,43 @@
                             <option value="34">+34</option>
                             <option value="43">+43</option>
                         </select>
+                        <i class="fas fa-angle-down"></i>
                     </div>
                     <div class='flex__container--vertical col-sm-4 col-md-4 no-TL-M'>
                         <label>country code</label>
-                        <div class="custom__dropdown">
-                        <div class="select">
-                            <select name="custom__dropdown-TLM" id="custom__dropdown-TLM">
-                                <option value="46" selected>+46</option>
-                                <option value="35">+35</option>
-                                <option value="34">+34</option>
-                                <option value="43">+43</option>
-                            </select>
-                        </div>
-                        <i class="fas fa-angle-down"></i>
+                        <div class="dropdown">
+                            <input type="checkbox" id="checkbox-toggle-cc">
+                            <label for="checkbox-toggle-cc">+46</label>
+                            <ul>
+                                <li><a href="#">+46</a></li>
+                                <li><a href="#">+35</a></li>
+                                <li><a href="#">+34</a></li>
+                                <li><a href="#">+43</a></li>
+                            </ul>
+                            <i class="fas fa-angle-down"></i>
                         </div>
                     </div>
                     <div class='form__group flex__container--vertical col-sm-8 col-md-8'>
                         <label>phone number</label>
                         <label class='err_no-fill'>Field is required</label>
                         <label class='err_desc'>Not Valid (0208 993 5689)</label>
-                        <input type='text' class='input-control' id='phone_number' placeholder='phone number'/>
+                        <input type='text' class='input-control' id='phone_number' placeholder='phone number' />
                         <i class="far fa-check-circle" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
-            <div class='row'></div> 
+            <div class='row'></div>
             <div class='col-md-12 flex__container--center'>
                 <input type='submit' value='complete registration' class='' disabled='true'>
-            </div>  
-            
+            </div>
         </form>
-        <div class='row'></div> 
+        <div class='row'></div>
         <div class='footer__section fs--1_2 col-md-12'>
             <p class='uppercaseLetter text-center'>you will then confirm your deposit</p>
         </div>
-        <div class='row'></div> 
+        <div class='row'></div>
     </div>
     <script type="text/javascript" src='scripts.min.js'></script>
 </body>
+
 </html>

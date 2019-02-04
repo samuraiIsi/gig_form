@@ -39,7 +39,7 @@ function isValid(e) {
 }
 
 var validateForm = function(e) {
-    if (e && e.target && e.target.tagName !== 'SELECT' && e.target.type !== 'radio') {
+    if (e && e.target && e.target.tagName !== 'SELECT' && e.target.type !== 'radio' && e.target.type !== 'checkbox') {
         if (e.target.value === null || e.target.value === "") {
             e.target.parentNode.classList.add('state-input--empty');
             e.target.parentNode.classList.remove('state-input--valid');
